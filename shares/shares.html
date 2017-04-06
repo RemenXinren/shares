@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>shares</title>
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="js/shares.js"></script>
+    <link rel="stylesheet" href="style/shares.css">
+</head>
+<body>
+<div class="stockQuote">
+    <div class="top">股票展示台</div>
+    <div class="proBox">请输入您想查询的股票代码：</div>
+    <div class="promptBox"></div>
+    <br/>
+    <input type="text" class="txt"  placeholder="请输入股票代码，例如600030" maxlength="6"/>
+    <button id="queryBtn">查询</button>
+    <table rules="all">
+        <tr class="first">
+        	<td width="50px">选项</td>
+            <td width="100px">股票代码</td>
+            <td width="80px">名称</td>
+            <td width="80px">最高价</td>
+            <td width="80px">最低价</td>
+            <td width="80px" class="sorting">当前价格</td>
+            <td width="200px">更新时间</td>
+        </tr>
+    </table>
+    <button id="allChoose">全选</button>
+    <button id="deleteBtn">删除</button>
+</div>
+</body>
+
+</html>
